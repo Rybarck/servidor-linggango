@@ -1,0 +1,18 @@
+{
+  "name": "Linggango Minecraft Server",
+  "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+  "features": {
+    "ghcr.io/devcontainers/features/java:1": {
+      "version": "17"
+    }
+  },
+  "forwardPorts": [8443],
+  "portsAttributes": {
+    "8443": {
+      "label": "Crafty Controller",
+      "protocol": "https",
+      "onAutoForward": "notify"
+    }
+  },
+  "postCreateCommand": "sudo apt-get update && sudo apt-get install -y git curl wget gnupg tmux python3-pip python3-distro"
+}
