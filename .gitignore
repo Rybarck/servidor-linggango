@@ -1,0 +1,30 @@
+# Minecraft runtime
+world/
+world_nether/
+world_the_end/
+logs/
+crash-reports/
+backups/
+cache/
+
+# Large/generated server files
+libraries/
+versions/
+*.jar
+*.zip
+*.tar
+*.tar.gz
+
+# Crafty runtime
+crafty/
+minecraft/
+
+# Secrets / tunnels
+.env
+*.token
+.playit/
+
+# OS/editor
+.DS_Store
+Thumbs.db
+.vscode/
